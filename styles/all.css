@@ -1,0 +1,41 @@
+* {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Times New Roman'; /* Change font */
+}
+
+
+html {scroll-behavior: smooth;
+    overflow: auto; /* Hide scrollbars */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+    text-align: center;
+}
+
+/* General text styling */
+h1 {
+    font-size: 3rem;
+}
+
+
+
+
+/* if it is a phone */
+
+
+/* if it is a huge monitor */

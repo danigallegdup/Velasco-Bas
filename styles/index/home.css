@@ -1,0 +1,423 @@
+
+/* Loader styles */
+
+
+/* if it is a phone */
+@media (max-aspect-ratio: 1/1) {
+    /* Copy button next to email addresses (smaller on phones) */
+    .copy-email {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        /* Visual icon size (smaller) */
+        font-size: 14px;        /* makes the emoji/icon smaller */
+        line-height: 1;
+        /* Optional: keep background green */
+        background: #009051;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        box-sizing: content-box;
+        }
+
+    footer {
+        background-color: #22252AB1; /* Dark background color */
+        color: #F7F5F2; /* Light text color */
+        padding: 0.5rem 0; /* Padding for top and bottom */
+        text-align: center; /* Center the text */
+        position: fixed; /* Fix the footer at the bottom */
+        bottom: 0;
+        width: 100%;
+        
+    }
+
+    .schools_locations a {
+    color: #033720; /* rgb(0, 144, 81) */
+    text-decoration: none;
+    font-weight: 700;
+    
+    }
+    
+    footer p {
+        margin: 0; /* Remove default margin */
+        font-size: 0.6rem; /* Adjust font size */
+    }
+    
+      #home {
+        position: relative; /* Ensure the pseudo-element is positioned relative to #home */
+        /* background-color: #000000; */
+        color: #F7F5F2;
+        background-image: url('../../content/hero_image1.png'); /* Replace with your image URL */
+        background-size: cover; /* Ensure the image covers the entire background */
+        background-position: top; /* Center the image */
+        background-repeat: repeat; /* Repeat the image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #home::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000098; /* Translucent black background */
+        z-index: 1; /* Ensure the pseudo-element is above the background image */
+    }
+    
+    #home .text-content {
+        position: relative;
+        z-index: 2; /* Ensure the text is above the pseudo-element */
+        padding: 2rem;
+        text-align: center !important;
+    }
+    /*Links circles */
+    .social{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;	
+        padding-top: 15px;
+    }
+
+    .social a{
+        width:5vh;
+        height:5vh;
+    }
+
+    .iconf{
+        padding-left: 1%;
+    }
+    .iconf  a{
+        width:5vh;
+        height:5vh;
+        background-color: #F7F5F2;
+        border: 0.25vh solid  #956226;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .iconf img{
+        width:4vh;height:4vh;
+    }
+    /* */
+
+
+}
+
+/* if it is a comp;*/
+@media (min-aspect-ratio: 1/1) {
+
+    /* Copy button next to email addresses */
+    .copy-email{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+        border: none;
+        background-color: #009051; /* green */
+        color: #ffffff;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+
+    footer {
+        background-color: #22252AB1; /* Dark background color */
+        color: #F7F5F2; /* Light text color */
+        padding: 0.5rem 0; /* Padding for top and bottom */
+        text-align: center; /* Center the text */
+        position: fixed; /* Fix the footer at the bottom */
+        bottom: 0;
+        width: 50%;
+        /* Optional: Add some shadow for better visibility */
+    }
+    
+    footer p {
+        margin: 0; /* Remove default margin */
+        font-size: 1rem; /* Adjust font size */
+    }
+    
+    footer:hover {
+        background-color: #22252A;
+    }
+
+    #home {
+        display: flex;
+        
+    }
+    
+    #home .text-content {
+        background-color: #22252A;
+        color:  #F7F5F2;
+        flex: 1;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    #home .text-content h1 {
+        font-size: 3rem;
+    }
+    
+    #home .text-content p {
+        font-size: 1.5rem;
+    }
+    
+    #home .image-content {
+        background-color: #F7F5F2;
+        flex: 1;
+        height: 100vh;
+        background-image: url('../../content/hero_image1.png'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: top;
+    }
+
+     /*Links circles */
+     .social{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;	
+        padding-top: 15px;
+    }
+
+    .social a{
+        width:5vh;
+        height:5vh;
+    }
+
+    .social a:hover {
+        -ms-transform: scale(1.2); /* IE 9 */
+        -webkit-transform: scale(1.2); /* Safari 3-8 */
+        transform: scale(1.2); 
+    }
+
+    .iconf{
+        padding-left: 1%;
+    }
+    .iconf  a{
+        width:5vh;
+        height:5vh;
+        background-color: #F7F5F2;
+        border: 0.25vh solid  #956226;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .iconf img{
+        width:4vh;height:4vh;
+      }
+}
+
+/* if it is a huge monitor */
+/* if it is a comp*/
+@media (min-width: 2500px) {
+
+    /* Copy button next to email addresses */
+    .copy-email{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+        border: none;
+        background-color: #009051; /* green */
+        color: #ffffff;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .m1{
+        background-color: #F7F5F2;
+    }
+    .m2{
+        background-color: #F7F5F2;
+    }
+    footer {
+        background-color: #22252AB1; /* Dark background color */
+        color: #F7F5F2; /* Light text color */
+        padding: 0.5rem 0; /* Padding for top and bottom */
+        text-align: center; /* Center the text */
+        position: fixed; /* Fix the footer at the bottom */
+        bottom: 0;
+        width: 50%;
+    }
+    
+    footer p {
+        margin: 0; /* Remove default margin */
+        font-size: 1rem; /* Adjust font size */
+    }
+    
+    footer:hover {
+        background-color: #22252A;
+    }
+
+    #home {
+        background-color:#22252A;
+        margin: 0;
+        height: 100vh; /* Full screen height */
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10%; /* Define the width proportions */
+        grid-template-rows: 1.2fr; /* Single row, takes up full height */
+    }
+    
+  
+
+    #home .text-content {
+        background-color: #22252A;
+        color:  #F7F5F2;
+        flex: 1;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    #home .text-content h1 {
+        font-size: 3rem;
+    }
+    
+    #home .text-content p {
+        font-size: 1.5rem;
+    }
+    
+    #home .image-content {
+        background-color: #9c9996;
+        flex: 1;
+        height: 100vh;
+        background-image: url('../../content/hero_image1.png'); /* Replace with your image URL */
+        background-size: cover;
+        background-position: top;
+    }
+
+     /*Links circles */
+     .social{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;	
+        padding-top: 15px;
+    }
+
+    .social a{
+        width:5vh;
+        height:5vh;
+    }
+
+    .social a:hover {
+        -ms-transform: scale(1.2); /* IE 9 */
+        -webkit-transform: scale(1.2); /* Safari 3-8 */
+        transform: scale(1.2); 
+    }
+
+    .iconf{
+        padding-left: 1%;
+    }
+    .iconf  a{
+        width:5vh;
+        height:5vh;
+        background-color: #F7F5F2;
+        border: 0.25vh solid  #956226;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .iconf img{
+        width:4vh;height:4vh;
+      }
+}
+
+   
+.info{
+    padding-bottom: 2%;
+}
+
+.schools_locations a {
+    color: #009051; /* rgb(0, 144, 81) */
+    text-decoration: none;
+}
+
+.emails a {
+    color:#F7F5F2;; /* rgb(0, 144, 81) */
+    text-decoration: none;
+}
+
+.admin{
+    padding-top: 2%;
+}
+.emails{
+    padding-top: 0.5%;
+}
+
+.phone{
+    padding-top: 3% ;
+}
+
+/* Call button styling */
+.phone{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+
+.call-button:focus{
+    outline: 2px solid rgba(0,144,81,0.15);
+}
+
+/* modal removed as requested */
+@media (max-aspect-ratio: 1/1){
+    /* make call button smaller and color the emoji/label green */
+    .call-button{ padding:0.25rem; font-size:1rem; color:#009051; background:transparent; cursor: default; }
+    /* ensure copy button on phones stays smaller */
+    .copy-email{ width:1.6rem; height:1.6rem; font-size:0.95rem; }
+    /* increase main text sizes for legibility on phones */
+    #home .text-content h1 { font-size: 2.2rem; }
+    #home .text-content p, .schools_locations, .schools_locations a, .emails a, .phone { font-size: 1.05rem; }
+}
+
+/* Keep the .text-content block centered, but left-align the text inside it */
+#home .text-content {
+    text-align: left;
+}
+
+/* Limit width of headings and paragraphs so the text block stays centered
+   while the internal text remains left-aligned */
+#home .text-content h1,
+#home .text-content p {
+    max-width: 60ch;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+.copy-email:active{
+    transform: translateY(1px);
+}
+
+/* Dashboard removed — copy functionality kept without UI panel */
+
+/* Make the copy icon slightly larger on phone */
+@media (max-aspect-ratio: 1/1){
+    .copy-email{ font-size: 1.1rem; width:2.2rem; height:2.2rem; }
+}
